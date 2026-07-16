@@ -97,6 +97,63 @@ a { color:var(--viz-series-1); text-decoration:none; } a:hover { text-decoration
     <tbody id="cmp-tbody"></tbody>
   </table>
 
+  <section class="future-panel" aria-labelledby="future-title">
+    <div class="events-head">
+      <span id="future-title">未来事件雷达</span>
+      <span class="text-small text-muted">荷兰时间 · 重要性表示潜在波动能力，不代表确定方向</span>
+    </div>
+    <div class="future-grid">
+      <article class="future-card importance-5">
+        <div class="future-date"><b>7月16日 14:30</b><span class="impact impact-5">重要性 5/5</span></div>
+        <h3>美国零售销售 + 初请失业金 + 费城联储</h3>
+        <p>近期最近的直接波动窗口。数据强于预期通常推高美元与美债收益率、压制降息交易；偏弱则相反，但极弱可能触发衰退担忧。</p>
+        <a href="https://www.census.gov/retail/release_schedule.html" target="_blank" rel="noopener noreferrer">官方日程</a>
+      </article>
+      <article class="future-card importance-3">
+        <div class="future-date"><b>7月17日 15:15</b><span class="impact impact-3">重要性 3/5</span></div>
+        <h3>美国工业生产与产能利用率</h3>
+        <p>通常弱于CPI、非农和零售销售；只有显著偏离预期，或改变“软着陆”判断时，才容易形成持续行情。</p>
+        <a href="https://www.federalreserve.gov/newsevents/2026-july.htm" target="_blank" rel="noopener noreferrer">美联储日程</a>
+      </article>
+      <article class="future-card importance-4">
+        <div class="future-date"><b>日期待确认 · 7月下旬</b><span class="impact impact-4">重要性 4/5</span></div>
+        <h3>美国 CLARITY Act 加密市场结构法案</h3>
+        <p>新草案或推进表决会影响交易所、代币监管边界和机构预期。方向偏政策利好，但两党支持不足，延迟或受阻也会造成利好落空。</p>
+        <a href="https://www.coindesk.com/policy/2026/07/09/newest-version-of-crypto-clarity-act-may-drop-as-soon-as-next-week-sources-say" target="_blank" rel="noopener noreferrer">进展来源</a>
+      </article>
+      <article class="future-card importance-5">
+        <div class="future-date"><b>7月29日 20:00 / 20:30</b><span class="impact impact-5">重要性 5/5</span></div>
+        <h3>FOMC利率声明与主席记者会</h3>
+        <p>本月最重要的政策事件。重点不是只看利率决定，而是是否确认通胀降温、降息条件与资产负债表路径。</p>
+        <a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noopener noreferrer">FOMC日程</a>
+      </article>
+      <article class="future-card importance-5">
+        <div class="future-date"><b>7月30日 14:30</b><span class="impact impact-5">重要性 5/5</span></div>
+        <h3>美国二季度GDP初值 + 6月PCE通胀</h3>
+        <p>增长与通胀同场公布，可能重新定价降息概率。核心PCE能否确认CPI降温，尤其关键。</p>
+        <a href="https://www.bea.gov/news/schedule" target="_blank" rel="noopener noreferrer">BEA日程</a>
+      </article>
+      <article class="future-card importance-5">
+        <div class="future-date"><b>8月7日 14:30</b><span class="impact impact-5">重要性 5/5</span></div>
+        <h3>美国7月非农就业报告</h3>
+        <p>就业、失业率和薪资共同决定增长与降息叙事。需要同时看前值修订，不能只盯新增就业人数。</p>
+        <a href="https://www.bls.gov/schedule/news_release/current_year.asp" target="_blank" rel="noopener noreferrer">BLS日程</a>
+      </article>
+      <article class="future-card importance-5">
+        <div class="future-date"><b>8月12日 14:30</b><span class="impact impact-5">重要性 5/5</span></div>
+        <h3>美国7月CPI</h3>
+        <p>检验6月通胀降温是否持续。核心环比和住房服务通胀通常比单看总体同比更有信息量。</p>
+        <a href="https://www.bls.gov/schedule/news_release/cpi.htm" target="_blank" rel="noopener noreferrer">CPI日程</a>
+      </article>
+      <article class="future-card importance-4">
+        <div class="future-date"><b>8月13日 14:30</b><span class="impact impact-4">重要性 4/5</span></div>
+        <h3>美国7月PPI</h3>
+        <p>主要通过PCE分项和利率预期影响市场；若与CPI方向冲突，容易引起二次定价。</p>
+        <a href="https://www.bls.gov/schedule/news_release/ppi.htm" target="_blank" rel="noopener noreferrer">PPI日程</a>
+      </article>
+    </div>
+  </section>
+
   <div class="events-head">
     <span>六个月异常行情与同期消息</span>
     <span class="text-small text-muted">|BTC 15分钟收益|约≥1.75%，相邻波动已合并</span>
@@ -155,6 +212,22 @@ a { color:var(--viz-series-1); text-decoration:none; } a:hover { text-decoration
 #crypto-market-patterns .event-move { font-weight: 500; }
 #crypto-market-patterns .event-source { white-space: nowrap; }
 #crypto-market-patterns .confidence { color: var(--muted-foreground); }
+#crypto-market-patterns .future-panel { margin-top: 22px; }
+#crypto-market-patterns .future-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+#crypto-market-patterns .future-card { position: relative; overflow: hidden; padding: 15px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); }
+#crypto-market-patterns .future-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 3px; background: var(--muted-foreground); }
+#crypto-market-patterns .future-card.importance-5::before { background: #ef4444; }
+#crypto-market-patterns .future-card.importance-4::before { background: #f59e0b; }
+#crypto-market-patterns .future-card.importance-3::before { background: #3b82f6; }
+#crypto-market-patterns .future-date { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12px; }
+#crypto-market-patterns .future-date b { font-variant-numeric: tabular-nums; }
+#crypto-market-patterns .impact { padding: 3px 7px; border-radius: 999px; font-size: 11px; font-weight: 650; white-space: nowrap; }
+#crypto-market-patterns .impact-5 { color: #ef4444; background: color-mix(in srgb,#ef4444 12%,transparent); }
+#crypto-market-patterns .impact-4 { color: #d97706; background: color-mix(in srgb,#f59e0b 14%,transparent); }
+#crypto-market-patterns .impact-3 { color: #2563eb; background: color-mix(in srgb,#3b82f6 12%,transparent); }
+#crypto-market-patterns .future-card h3 { margin: 11px 0 6px; font-size: 15px; line-height: 1.35; }
+#crypto-market-patterns .future-card p { margin: 0 0 10px; color: var(--muted-foreground); font-size: 12px; line-height: 1.55; }
+#crypto-market-patterns .future-card a { font-size: 12px; font-weight: 600; }
 @media (max-width: 560px) {
   #crypto-market-patterns .viz-controls { align-items: stretch; }
   #crypto-market-patterns .form-label { min-width: 100%; }
@@ -163,6 +236,7 @@ a { color:var(--viz-series-1); text-decoration:none; } a:hover { text-decoration
   #crypto-market-patterns .event-source { justify-self: end; }
   #crypto-market-patterns .cmp-table th,
   #crypto-market-patterns .cmp-table td { padding: 6px 3px; }
+  #crypto-market-patterns .future-grid { grid-template-columns: 1fr; }
 }
 </style>
 
@@ -306,4 +380,3 @@ a { color:var(--viz-series-1); text-decoration:none; } a:hover { text-decoration
 </main>
 </body>
 </html>
-
